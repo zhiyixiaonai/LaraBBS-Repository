@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/**
+ * 入口 API
+ */
+Route::get('/', 'PagesController@root')->name('root');
